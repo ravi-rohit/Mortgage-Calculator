@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <div id="wrapper">
+        <h1>Mortgage Calculator</h1>
+      <form action="">
+        <div class="container">
+          <div class="fRow"><label>Purchase Price <span id="price"></span></div>
+          <input id="pp" type="range" min="0" max="1000000" step="50000" class="slider" value="0"/></label>
+        </div>
+        <div class="container">
+            <div class="fRow"><label>Down Payment<span id="dpayment"></span></div>
+            <input id ="dp" type="range" class="slider"  min="0" max="1000000" step="5000" value="0"/>
+          </div>
+          <div class="container">
+           <div class="fRow"> <label>Repayment Time <span id="rtime"></span></div>
+            <input id= "rt"type="range" class="slider" min="5" max="25" value="5" step="5"/></label>
+          </div>
+          <div class="container">
+            <div class="fRow"><label>Interest Rate <span id="irate"></span></div>
+            <input id="ir" type="range" class="slider" max="10" value="0" /></label>
+          </div>
+        <div class="container">
+            <label>Loan Amount</label>
+            <p class="amount" id="loanAmount"></p>
+        </div>
+        <div class="container">
+            <label>Estimated pr. month:</label>
+            <p class="amount" id="est"></p>
+        </div>
+        <button id="quote">Get a mortgage quote</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
